@@ -26,13 +26,28 @@ color: aliceblue;
 font-size: 18px;
 font-family: cursive;
 }
-button{
-    padding: 13px 30px;
+
+a{
+    width: 20%;
+    display: block;
+    padding: 10px 30px;
     border-radius: 15px;
     border: none;
-    background: rgb(5, 129, 245);
+    background: blue;
     color: white;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
+a:hover{
+    background-color: aquamarine;
+    border: 2px solid blue;
+    color: blue;
+}
+
 
 @media screen and (max-width:630px){
     h1{        

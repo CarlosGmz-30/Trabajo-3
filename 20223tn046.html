@@ -2,36 +2,97 @@
 <html lang="en">
 <head>
     <style>
+
         body{
-            background-color: black;
+            background-color: #012B30;
             color: aqua;
+            font-family: 'Open Sans', sans-serif;
         }
-        button{
-            padding: 13px 30px;
+
+        strong,h1{
+            color: antiquewhite;
+        }
+
+        a{
+            width: 20%;
+            display: block;
+            padding: 10px 30px;
             border-radius: 15px;
             border: none;
             background: blue;
             color: white;
+            margin: auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
         }
+        a:hover{
+            background-color: aquamarine;
+            border: 2px solid blue;
+            color: blue;
+        }
+
+        .enca {
+            background-color: #00115F;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            border: none;
+            border-radius: 50px;
+        }
+
+        .pro {
+            background-color: #00115F;
+            width: 30%;
+            margin: 60px auto;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 22px;
+        }
+
+        .enca img{
+            height: 400px;
+        }
+
     </style>
     <meta charset="UTF-8">
     <title>20223TN046</title>
 </head>
 <body>
-    <p><h4>Nombre: </h4>Alan Manuel Benítez García</p>
-    <p><h4>Carrera: </h4>Desarrollo de Software Multuplataforma </p>
-    <p><h4>Grado y Grupo:</h4>3°B</p>
-    <p><h4>Correo Electronico</h4>20223tn046@utez.edu.mx</p>
-    <p><h4>Matricula: </h4>20223TN046</p>
-    <p><h4>Estudios Previos: </h4></p>
-    <p>- CBTis 223 Tecnico en Programacion</p>
-    <p>- Secundaria Tecnica Numero 27</p>
-    <p><h4>Pasatiempos: </h4></p>
-    <p>Ver anime, jugar videojuegos, escuchar musica, estar con mi novia</p>
-    <img src="Imagenes/20221117_203011.jpg" alt="Yo" width="100">
-    <p><h4>Mi videojuego favorito</h4></p>
-    <img src="Imagenes/minecraft_2.jpg" alt="Minecraft">
+    <div class="enca"><h1>Hola, este soy yo</h1>
+    <img src="Imagenes/20221117_203011.jpg" alt="Yo">
+    </div>
+
+    <div class="pro"><strong>Nombre:</strong><br><p>Alan Manuel Benítez García</p></div>
+    <div class="pro"><strong>Carrera: </strong><br><p>Desarrollo de Software Multuplataforma </p></div>
+    <div class="pro"><strong>Grado y Grupo:</strong><br><p>3°B</p></div>
+    <div class="pro"><strong>Correo Electronico:</strong><br><p>20223tn046@utez.edu.mx</p></div>
+    <div class="pro"><strong>Matricula:</strong><br><p>20223TN046</p></div>
+    <div class="pro"><strong>Estudios Previos:</strong>
     <br>
-    <a href="index.html"><button>Regresar a Pagina Principal</button></a>
+    <p>- CBTis 223 Tecnico en Programacion
+    <br>
+    - Secundaria Tecnica Numero 27</div>
+    <div class="pro"><strong>Pasatiempos: </strong>
+    <br>
+    <p>Ver anime, jugar videojuegos, escuchar musica, estar con mi novia y de ves en cuando tocar guitarra :D</p></div>
+    <div class="pro"><strong>Mi videojuego favorito</strong>
+    <br>
+    <img src="Imagenes/minecraft_2.jpg" alt="Minecraft"></div>
+    <br>
+    <a href="index.html">Pagina Principal</a>
 </body>
 </html>
