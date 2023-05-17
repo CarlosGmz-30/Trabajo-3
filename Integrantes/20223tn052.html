@@ -4,6 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jayr Gil Galicia Jimenez</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+      
+    </style>
   </head>
 
   <body>
@@ -24,19 +30,27 @@
     <button id="colorButton" onclick="changeColor()">Cambiar color</button>
 
     <div>
-      <p id="texto">Hola como estas, te ves bien eh! p</p>
+      <p id="texto">Hola como estas, te ves bien eh!</p>
       <button onclick="cambiarTexto()">Cambiar Texto</button>
     </div>
 
     <div>
-      <h2 id="HolaButton">
-        <button onclick="holaMundo()">HolaMundo</button>
-      </h2>
+      
+      <h2 id="holaMundo">Hola Mundo! </h2>
+       
+        <button onclick="ocultarHolaMundo()">Ocultar Hola Mundo</button>
+      
     </div>
 
     <button id="boton1">Imagen1</button>
     <button id="boton2">Imagen2</button>
     <img id="imagen1" src="../Imagenes\Nick.png" alt="Imagen1" />
+
+    <div>
+      <h1 id="boton3">
+        <button onclick="generarTexto()">Generar Texto</button>
+      </h1>
+    </div>
 
     <script src="Archivos.js/Trabajo_6_Jayr_Gil.js"></script>
   </body>
