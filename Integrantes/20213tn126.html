@@ -8,9 +8,13 @@
     </head>
     <body style="background-image: url('../Imagenes/bgAzulN.png');">
         <div class="center-div">
-            <h1 class="text">Mi nombre es el Alexis Leonardo Noriega Rangel</h1> 
+            <h1 class="text">Mi nombre es el Alexis Leonardo Noriega Rangel</h1>
             <div class="img-div">
-            <img src="../Imagenes/nra.jpg">
+            <img id="profpic" src="../Imagenes/nra.jpg">
+            <div>
+                <button style="margin-left: 300px;" onclick="imgFormal()">Foto formal</button>
+                <button onclick="imgInformal()">Foto informal</button>
+            </div>
             </div>
             <p class="text">
             Actualmente estoy en la carrera de Desarrollo de Software Multiplataforma en el grupo B,
@@ -56,8 +60,43 @@
                 </tr>
             </table>
         </div>
+        <div>
+            <center>
+                <br>
+                <br>
+                <p id="text" class="text" style="margin-left: 300px;">Me gusta programar</p>
+                <button onclick="changingText()" style="margin-left: 300px;">Next</button>
+            </center>
+        </div>
+        <div style="margin-left: 620px;">
+            <h2 id="hMundo" class="text">Hola Mundo</h2>
+            <button onclick="hideMundo()">Que aburrido, ocultame</button>
+        </div>
+        <div id="miDiv">
+            <p id="paragraph" class="text" style="margin-left: 600px;"></p>
+            <button onclick="textJS()">Imprimir</button>
+        </div>
     </body>
 </html>
+
+<script>
+    function hideMundo() {
+        document.getElementById("hMundo").style.display = "none";
+    }
+    function changingText() {
+        document.getElementById("text").innerHTML = "Lo que no me gusta es la documentación";
+    }
+    function imgInformal() {
+        document.getElementById("profpic").src = "https://avatars.githubusercontent.com/u/85385095?v=4";
+    }
+    function imgFormal() {
+        document.getElementById("profpic").src = "../Imagenes/nra.jpg";
+    }
+    function textJS() {
+        document.getElementById("paragraph").innerHTML = "Este texto no lo escribió Noriega, lo escribió Javascript";
+    }
+
+</script>
 
 <style>
 html, body {
@@ -74,6 +113,8 @@ html, body {
     padding: 8px 8px 8px 8px;
 }
 img {
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     margin-left: 310px;
 }
