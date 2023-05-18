@@ -37,12 +37,12 @@
     </p>
     <h3>This is minecraft:</h3>
 
-  
+
     <img id="imagen-principal" src="../Imagenes/minecraft_3.jpg" width="400" style="border-radius: 10px;" />
     <br><br>
     <button onclick="changeImage()" style="margin-right: 10px;">Anterior</button>
     <button onclick="returnImage()" style="margin-left: 10px;">Siguiente</button>
-    
+
 
     <br><br>
 
@@ -51,6 +51,24 @@
 
     <br><a href="../index.html">Pagina Principal</a>
   </center>
+
+
+  <script>
+    var imageElement = document.getElementById("imagen-principal");
+    var currentImage = "../Imagenes/minecraft-2768571.jpg";
+    var previousImage = "../Imagenes/minecraft_3.jpg";
+
+    function changeImage() {
+      imageElement.src = currentImage;
+    }
+
+    function returnImage() {
+      imageElement.src = previousImage;
+    }
+  </script>
+
+
+
 </body>
 
 </html>

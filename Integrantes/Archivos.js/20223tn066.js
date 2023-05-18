@@ -23,20 +23,6 @@ function changeText() {
     }
 }
 
-
-var imageElement = document.getElementById("imagen-principal");
-var currentImage = "../Imagenes/minecraft-2768571.jpg";
-var previousImage = "../Imagenes/minecraft_3.jpg";
-
-function changeImage() {
-  imageElement.src = currentImage;
-}
-
-function returnImage() {
-  imageElement.src = previousImage;
-}
-
-
 function hideMessage() {
     var mensajeElement = document.getElementById("mensaje");
     mensajeElement.style.display = "none";
