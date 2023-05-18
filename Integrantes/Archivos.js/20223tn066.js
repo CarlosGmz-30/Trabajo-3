@@ -24,7 +24,7 @@ function changeText() {
 }
 
 
-var imageElement = document.getElementById("imagen");
+var imageElement = document.getElementById("imagen-principal");
 var currentImage = "../Imagenes/minecraft_3.jpg";
 var previousImage = "../Imagenes/minecraft-2768571.jpg";
 
