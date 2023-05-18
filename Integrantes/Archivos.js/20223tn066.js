@@ -23,25 +23,17 @@ function changeText() {
     }
 }
 
-var ImagenOriginal = document.getElementById("imagen");
-var imagenDos = ("Imagenes/minecraft_2.jpg")
-var Original = "(Imagenes/minecraft_3.jpg)"
-var OriginalImage = true;
+
+var imageElement = document.getElementById("imagen");
+var currentImage = "../Imagenes/minecraft_3.jpg";
+var previousImage = "../Imagenes/minecraft-2768571.jpg";
 
 function changeImage() {
-    if(OriginalImage){
-        ImagenOriginal == imagenDos;
-        OriginalImage = false;
-    }
-    alert("Prueba");
+  imageElement.src = currentImage;
 }
 
 function returnImage() {
-    if(OriginalImage == false){
-        ImagenOriginal == Original;
-        OriginalImage == true;
-    }
-    alert("Prueba");
+  imageElement.src = previousImage;
 }
 
 
