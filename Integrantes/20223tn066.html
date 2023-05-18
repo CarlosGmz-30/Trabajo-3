@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>20223tn066</title>
-  </head>
-  <body style="background-color: lightblue">
-    <center>
-      <h1>Me...</h1>
-      <img src="../Imagenes/charlie.jpg" width="150" style="border-radius: 100px;"/>
-      <p><strong>Name: </strong><br />Charlie</p>
-      <p><strong>Career: </strong><br />Multiplatform Software Development</p>
-      <p><strong>Degree/Group: </strong><br />3°B</p>
-      <p><strong>email: </strong><br />20223tn066@utez.edu.mx</p>
-      <p><strong>ID: </strong><br />20223tn066</p>
-      <p><strong>Previos studies: </strong><br />Tecmilenio University</p>
-      <p>
-        <strong>Hobbies: </strong><br />I like going to the gym and playing
-        video games,<br />
-        my favorite video game is
-        <span style="color: green">Minecraft</span> for me it is one <br />of
-        the best games out there.
-      </p>
-      <h3>This is minecraft:</h3>
-      <img src="../Imagenes/minecraft_3.jpg" width="400" style="border-radius: 10px;"/>
-      <br><br>
-      <a href="../index.html">Pagina Principal</a>
-    </center>
-  </body>
+
+<head>
+  <title>20223tn066</title>
+</head>
+
+<body style="background-color: lightblue">
+
+  <script src="Archivos.js/20223tn066.js"></script>
+
+  <center>
+
+    <h2 id="mensaje">Hola mundo</h2>
+    <button onclick="hideMessage()">Ocultar mensaje</button><br>
+    
+    <h1 id="texto">My name is Charlie</h1>
+    <button onclick="changeText()">Cambiar texto</button><br><br>
+
+
+    <img src="../Imagenes/charlie.jpg" width="150" style="border-radius: 100px;" /><br>
+
+    <br><button onclick="changeColor()">Cambiar color de fondo</button>
+
+    <p><strong>Name: </strong><br />Charlie</p>
+    <p><strong>Career: </strong><br />Multiplatform Software Development</p>
+    <p><strong>Degree/Group: </strong><br />3°B</p>
+    <p><strong>email: </strong><br />20223tn066@utez.edu.mx</p>
+    <p><strong>ID: </strong><br />20223tn066</p>
+    <p><strong>Previos studies: </strong><br />Tecmilenio University</p>
+    <p>
+      <strong>Hobbies: </strong><br />I like going to the gym and playing
+      video games,<br />
+      my favorite video game is
+      <span style="color: green">Minecraft</span> for me it is one <br />of
+      the best games out there.
+    </p>
+    <h3>This is minecraft:</h3>
+
+    <img id="imagen" src="../Imagenes/minecraft_3.jpg" width="400" style="border-radius: 10px;" />
+    <br><br>
+    <button onclick="changeImage()" style="margin-right: 10px;">Anterior</button>
+    <button onclick="returnImage()" style="margin-left: 10px;">Siguiente</button>
+
+    <br><br>
+
+    <div id="miDiv"></div>
+    <button id="miBoton" onclick="escribirTexto()">Escribir Texto</button><br><br>
+
+    <br><a href="../index.html">Pagina Principal</a>
+  </center>
+</body>
+
 </html>
